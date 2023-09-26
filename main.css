@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.companiesList {
+  animation: 30s linear 0s infinite normal none companiesAnimation;
+}
+@keyframes companiesAnimation {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -160%;
+  }
+}
+.ctaBg {
+  background-size: 200% 100%;
+}
+
+.ctaSection {
+  min-height: 880px;
+}
+.coreFeaturesBg {
+  background-size: 2000px 100%;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+@media screen and (min-width: 1000px) {
+  .coreFeaturesBg {
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
